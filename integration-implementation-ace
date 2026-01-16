@@ -1,0 +1,40 @@
+integration-implementation-ace/
+│
+├── flow-design.md
+├── reference-message-flow/
+│   └── sample-esql.txt
+├── transformation-strategy.md
+├── error-handling-patterns.md
+└── deployment-approach.md
+
+
+File-by-file explanation
+flow-design.md
+Explain:
+
+Flow structure
+Reusability
+Modular design
+Common services
+reference-message-flow/
+Simple dummy ESQL
+Fake fields
+Example mapping only
+transformation-strategy.md
+Explain:
+
+JSON ↔ XML
+Canonical models
+Validation rules
+error-handling-patterns.md
+Explain:
+
+Business vs technical errors
+Retry logic
+Dead letter handling
+deployment-approach.md
+Explain:
+
+BAR packaging
+Environment configs
+Rollback strategy

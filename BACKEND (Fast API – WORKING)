@@ -1,0 +1,48 @@
+backend/requirements.txt
+fastapi
+uvicorn
+python-multipart
+
+backend/main.py
+from fastapi import FastAPI, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
+from api.feedback import analyze_ui
+
+app = FastAPI(title="AI UI/UX Assistant")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.post("/analyze")
+async def analyze_design(file: UploadFile = File(...)):
+    result = await analyze_ui(file)
+    return result
+
+
+backend/api/feedback.py
+from services.ai_service import generate_feedback
+
+async def analyze_ui(file):
+    feedback = generate_feedback(file.filename)
+    return {
+        "success": True,
+        "feedback": feedback
+    }
+
+backend/services/ai_service.py
+def generate_feedback(filename: str):
+    return {
+        "Color Balance": "Good contrast, but try reducing saturation slightly.",
+        "Spacing": "Increase vertical spacing between sections.",
+        "Hierarchy": "Primary CTA should be more visually dominant.",
+        "Typography": "Font size hierarchy is good, consider stronger headings."
+    }
+
+Run Backend
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload

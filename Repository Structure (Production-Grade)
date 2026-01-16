@@ -1,0 +1,43 @@
+ai-uiux-assistant/
+│
+├── README.md
+├── .gitignore
+├── LICENSE
+│
+├── frontend/
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── vite.config.js
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── index.css
+│       ├── components/
+│       │   ├── Navbar.jsx
+│       │   ├── Hero.jsx
+│       │   ├── UploadCard.jsx
+│       │   ├── FeedbackPanel.jsx
+│       │   └── PromptGenerator.jsx
+│       ├── pages/
+│       │   ├── Home.jsx
+│       │   └── Dashboard.jsx
+│       ├── hooks/
+│       │   └── useUpload.js
+│       └── utils/
+│           └── api.js
+│
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── api/
+│   │   ├── vision.py
+│   │   └── feedback.py
+│   ├── services/
+│   │   ├── ai_feedback.py
+│   │   └── layout_generator.py
+│   └── utils/
+│       └── image_parser.py
+│
+└── assets/
+    └── screenshots/

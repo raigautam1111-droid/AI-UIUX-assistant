@@ -1,0 +1,43 @@
+file-integration-sfg/
+│
+├── partner-onboarding.md
+├── file-flow-lifecycle.md
+├── security-and-compliance.md
+├── monitoring-and-alerting.md
+└── sla-and-support.md
+
+
+File-by-file explanation
+partner-onboarding.md
+Explain:
+
+Steps to onboard partners
+Credentials exchange
+Connectivity testing
+file-flow-lifecycle.md
+Explain:
+
+Receive
+Validate
+Route
+Archive
+Retry
+security-and-compliance.md
+Explain:
+
+PGP encryption
+Signing
+Non-repudiation
+Audit trails
+monitoring-and-alerting.md
+Explain:
+
+File failures
+Alerts
+Dashboards
+sla-and-support.md
+Explain:
+
+SLA definitions
+Incident handling
+Escalation model

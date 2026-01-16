@@ -1,0 +1,48 @@
+delivery-governance/
+│
+├── delivery-model.md
+├── agile-execution.md
+├── ci-cd-strategy.md
+├── risk-and-dependency.md
+├── roles-and-responsibilities.md
+└── release-management.md
+
+
+File-by-file explanation
+delivery-model.md
+Explain:
+
+Team structure
+Ownership
+Communication model
+agile-execution.md
+Explain:
+
+Sprint planning
+Backlog management
+PI planning
+ci-cd-strategy.md
+Explain:
+
+Build pipelines
+Automated testing
+Promotion strategy
+risk-and-dependency.md
+Explain:
+
+External dependencies
+Mitigation plans
+Escalation
+roles-and-responsibilities.md
+Clearly define:
+Product Owner
+Delivery Lead
+Developers
+QA
+Ops
+release-management.md
+Explain:
+
+Release cycles
+Cutover plans
+Rollback

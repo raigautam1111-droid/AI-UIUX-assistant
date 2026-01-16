@@ -1,0 +1,47 @@
+api-management-apic/
+│
+├── api-lifecycle.md
+├── openapi-sample.yaml
+├── security-policies.md
+├── traffic-management.md
+└── versioning-strategy.md
+
+
+File-by-file explanation
+api-lifecycle.md
+Explain:
+
+Design
+Review
+Publish
+Deprecate
+Retire
+Include:
+
+Governance checkpoints
+openapi-sample.yaml
+Dummy API
+No real endpoints
+Clear schema
+Proper naming
+API design maturity
+security-policies.md
+Explain:
+
+OAuth2 flows
+Client ID/Secret
+IP filtering
+Threat protection
+traffic-management.md
+Explain:
+
+Rate limits
+Spike arrest
+SLA tiers
+Burst handling
+versioning-strategy.md
+Explain:
+
+v1/v2 approach
+Backward compatibility
+Consumer communication
